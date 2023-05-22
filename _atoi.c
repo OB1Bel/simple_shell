@@ -12,7 +12,7 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - checks if character is a delimeter
+ * is_delim - checks if the character is a delimeter
  * @c: the char to check
  * @delim: the delimeter string
  *
@@ -27,7 +27,7 @@ int is_delim(char c, char *delim)
 }
 
 /**
- * _isalpha - checks for alphabetic character
+ * _isalpha - checks for the alphabetic character
  * @c: The character to input
  *
  * Return: 1 if c is alphabetic, 0 otherwise
@@ -41,7 +41,7 @@ int _isalpha(int c)
 }
 
 /**
- * _atoi - converts a string to an integer
+ * _atoi - converts a string to an int
  * @s: the string to be converted
  *
  * Return: 0 if no numbers in string, converted number otherwise
