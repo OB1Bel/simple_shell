@@ -122,7 +122,7 @@ char *_convert_number(long int num, int base, int flags)
 
 /**
  * _remove_comment - replace the first instance of # with \0
- * @buf: adress of string to modify
+ * @buf: address of string to modify
  *
  * Return: void
  */
