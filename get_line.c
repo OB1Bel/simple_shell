@@ -3,8 +3,8 @@
 /**
  * input_buf - buffer chained
  * @info: struct of params
- * @buffer: adress of buffer
- * @len: adress of len
+ * @buffer: address of buffer
+ * @len: address of len
  *
  * Return: readed byte
  */
