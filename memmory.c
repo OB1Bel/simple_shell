@@ -71,8 +71,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 }
 
 /**
- * _bfree - free pointer, put null to the adress
- * @ptr: adresse of pointer
+ * _bfree - free pointer, put null to the address
+ * @ptr: address of pointer
  *
  * Return: 1 (Success), 0 (FAIL)
  */
