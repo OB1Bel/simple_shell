@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * get_history_file - get history file
+ * _get_history_file - get history file
  * @info: param struct
  *
  * Return: history file
  */
-char *get_history_file(info_t *info)
+char *_get_history_file(info_t *info)
 {
 	char *buffer, *dir;
 
@@ -24,12 +24,12 @@ char *get_history_file(info_t *info)
 }
 
 /**
- * write_history - create file, or appends one
+ * _write_history - create file, or appends one
  * @info: param struct
  *
  * Return: 1 (Success), -1 (Fail)
  */
-int write_history(info_t *info)
+int _write_history(info_t *info)
 {
 	ssize_t fd;
 	char *filename = _get_history_file(info);
@@ -102,14 +102,14 @@ int read_history(info_t *info)
 }
 
 /**
- * build_history_list - add entry to history linked list
+ * _build_history_list - add entry to history linked list
  * @info: struct contain potential arguments
  * @buf: buffer
  * @linecount: history line count
  *
  * Return: 0 (Success)
  */
-int build_history_list(info_t *info, char *buf, int linecount)
+int _build_history_list(info_t *info, char *buf, int linecount)
 {
 	list_t *node = NULL;
 
@@ -123,12 +123,12 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_history - renumber history linked list
+ * _renumber_history - renumber history linked list
  * @info: struct contain potential arguments
  *
  * Return: new history
  */
-int renumber_history(info_t *info)
+int _renumber_history(info_t *info)
 {
 	list_t *node = info->history;
 	int i = 0;

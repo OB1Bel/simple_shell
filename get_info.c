@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * clear_info - initialize info struct
+ * _clear_info - initialize info struct
  * @info: struct of params
  *
  * Return: void
  */
-void clear_info(info_t *info)
+void _clear_info(info_t *info)
 {
 	info->arg = NULL;
 	info->argv = NULL;
@@ -15,13 +15,13 @@ void clear_info(info_t *info)
 }
 
 /**
- * set_info - set info
+ * _set_info - set info
  * @info: struct of params
  * @av: arguments
  *
  * Return: void
  */
-void set_info(info_t *info, char **av)
+void _set_info(info_t *info, char **av)
 {
 	int i = 0;
 
@@ -48,13 +48,13 @@ void set_info(info_t *info, char **av)
 }
 
 /**
- * free_info - free all info from struct
+ * _free_info - free all info from struct
  * @info: struct of params
  * @all: true if free all
  *
  * Return: void
  */
-void free_info(info_t *info, int all)
+void _free_info(info_t *info, int all)
 {
 	_ffree(info->argv);
 	info->argv = NULL;

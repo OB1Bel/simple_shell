@@ -1,25 +1,25 @@
 #include "shell.h"
 
 /**
- * myhistory - display history
+ * _myhistory - display history
  * @info: struct contains all arguments
  *
  * Return: 0 (Success)
  */
-int myhistory(info_t *info)
+int _myhistory(info_t *info)
 {
 	_print_list(info->history);
 	return (0);
 }
 
 /**
- * unset_alias - set alias to string
+ * _unset_alias - set alias to string
  * @info: struct contains all arguments
  * @str: alias string
  *
  * Return: 0 (Success), 1 (Fail)
  */
-int unset_alias(info_t *info, char *str)
+int _unset_alias(info_t *info, char *str)
 {
 	char *p, c;
 	int ret;
@@ -39,13 +39,13 @@ int unset_alias(info_t *info, char *str)
 }
 
 /**
- * set_alias - set alias
+ * _set_alias - set alias
  * @info: struct contains all arguments
  * @str: alias string
  *
  * Return: 0 (Success), 1 (Fail)
  */
-int set_alias(info_t *info, char *str)
+int _set_alias(info_t *info, char *str)
 {
 	char *p;
 
@@ -60,7 +60,7 @@ int set_alias(info_t *info, char *str)
 }
 
 /**
- * print_alias - print alias
+ * _print_alias - print alias
  * @node: alias linked list
  *
  * Return: 0 (Success), 1 (Fail)
@@ -84,12 +84,12 @@ int _print_alias(list_t *node)
 }
 
 /**
- * my_alias - alias built
+ * _myalias - alias built
  * @info: struct contains all arguments
  *
  * Return: 0 (Success)
  */
-int my_alias(info_t *info)
+int _myalias(info_t *info)
 {
 	int  i = 0;
 	char *p = NULL;

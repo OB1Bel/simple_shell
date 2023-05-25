@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * get_environ - return string array copy of environ
+ * _get_environ - return string array copy of environ
  * @info: struct of params
  *
  * Return: 0 (Success)
  */
-char **get_environ(info_t *info)
+char **_get_environ(info_t *info)
 {
 	if (!info->environ || info->env_changed)
 	{

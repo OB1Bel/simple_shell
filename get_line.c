@@ -150,12 +150,12 @@ int _getline(info_t *info, char **ptr, size_t *lenght)
 }
 
 /**
- * sigintHandler - blocks Ctrl-C
+ * _sigintHandler - blocks Ctrl-C
  * @sig: signal number
  *
  * Return: void
  */
-void sigintHandler(__attribute__((unused)) int sig)
+void _sigintHandler(__attribute__((unused)) int sig)
 {
 	_puts("\n");
 	_puts("AH-EM$: ");

@@ -1,24 +1,24 @@
 #include "shell.h"
 
 /**
- * interactive - return true if shell interactive
+ * _interactive - return true if shell interactive
  * @info: pointer to the struct contains info
  *
  * Return: 1 (interactive), 0 if not
  */
-int interactive(info_t *info)
+int _interactive(info_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
 
 /**
- * is_delim - check if char is delim
+ * _is_delim - check if char is delim
  * @c: char to check
  * @delim: delim string
  *
  * Return: 1 (true), 0 if not
  */
-int is_delim(char c, char *delim)
+int _is_delim(char c, char *delim)
 {
 	while (*delim)
 		if (*delim++ == c)

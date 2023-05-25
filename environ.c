@@ -75,12 +75,12 @@ int _myunsetenv(info_t *info)
 }
 
 /**
- * populate_env_list - populate environ linked list
+ * _populate_env_list - populate environ linked list
  * @info: struct of params
  *
  * Return: 0 (Success)
  */
-int populate_env_list(info_t *info)
+int _populate_env_list(info_t *info)
 {
 	list_t *node = NULL;
 	size_t i;

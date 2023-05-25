@@ -16,7 +16,7 @@ int _hsh(info_t *info, char **av)
 	{
 		_clear_info(info);
 		if (_interactive(info))
-			_puts("AH-EM$: ");
+			_puts("AD-MO$: ");
 		_eputchar(BUF_FLUSH);
 		r = _get_input(info);
 		if (r != -1)
