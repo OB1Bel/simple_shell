@@ -1,14 +1,14 @@
 #include "shell.h"
 
 /**
- * input_buf - buffer chained
+ * _input_buf - buffer chained
  * @info: struct of params
  * @buffer: address of buffer
  * @len: address of len
  *
  * Return: readed byte
  */
-ssize_t input_buf(info_t *info, char **buffer, size_t *len)
+ssize_t _input_buf(info_t *info, char **buffer, size_t *len)
 {
 	ssize_t r = 0;
 	size_t len_p = 0;
