@@ -43,12 +43,12 @@ ssize_t _input_buf(info_t *info, char **buffer, size_t *len)
 }
 
 /**
- * get_input - get a line -the new line
+ * _get_input - get a line -the new line
  * @info: struct of params
  *
  * Return: readed byte
  */
-ssize_t get_input(info_t *info)
+ssize_t _get_input(info_t *info)
 {
 	static char *buffer;
 	static size_t i, j, len;
@@ -85,14 +85,14 @@ ssize_t get_input(info_t *info)
 }
 
 /**
- * read_buf - read buffer
+ * _read_buf - read buffer
  * @info: struct of params
  * @buf: buffer
  * @i: size
  *
  * Return: r
  */
-ssize_t read_buf(info_t *info, char *buf, size_t *i)
+ssize_t _read_buf(info_t *info, char *buf, size_t *i)
 {
 	ssize_t r = 0;
 
